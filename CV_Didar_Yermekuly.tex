@@ -1,0 +1,97 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{fontawesome5}
+\usepackage[margin=1.35cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-5pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-1pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+
+\begin{center}
+  {\Large \scshape Abish Didar}\\[1mm]
+  \small Frontend-focused Software Engineer\\[1mm]
+  \footnotesize
+  \faPhone\ +7 (775) 432-67-15 \hspace{3mm}
+  \faEnvelope\ \href{mailto:yermekulyd@gmail.com}{yermekulyd@gmail.com} \hspace{3mm}
+  \faLinkedin\ \href{https://www.linkedin.com/in/didar-yermekuly/}{linkedin.com/in/didar-yermekuly} \hspace{3mm}
+  \faGithub\ \href{https://github.com/yermekulyd}{github.com/yermekulyd}
+\end{center}
+\vspace{-7pt}
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{ioka group}{October 2024 -- Present}{Software Engineer}{Almaty, Kazakhstan}
+  \resumeItemListStart
+    \resumeItem{Built and maintained production frontend products for a fintech ecosystem serving merchants including \textbf{Yandex}, \textbf{Chocofood}, \textbf{Allur}, and \textbf{Doscar}, covering merchant operations, payment processing, and customer-facing checkout experiences.}
+    \resumeItem{Developed the merchant administration platform for orders, payouts, analytics, shops, onboarding, promotions, support, and payment configuration using \textbf{React}, \textbf{TypeScript}, \textbf{MUI}, Redux Toolkit, React Query, and REST APIs.}
+    \resumeItem{Implemented secure payment flows with iframe-isolated card fields, saved cards, card binding, \textbf{3DS}, \textbf{Apple Pay}, \textbf{Google Pay}, and postMessage communication; packaged the functionality as reusable embeddable \textbf{ioka Elements} for merchant websites.}
+    \resumeItem{Contributed to \textbf{PCI DSS} frontend compliance by implementing \textbf{CSP}, frame-ancestors, X-Frame-Options, Referrer-Policy, X-Content-Type-Options, iframe isolation, and automated security tests to protect payment flows from common browser-based attacks.}
+    \resumeItem{Independently designed and delivered the \textbf{\href{https://apps.apple.com/kz/app/id6760103707}{ioka Travel mobile app}} with \textbf{React Native} and \textbf{Expo} across flights, rail, tours, lounges, eSIM, and hotels, owning architecture, UI, API integration, state management, testing, and release workflows; reached 1,000+ Android downloads and 730 first-time iOS downloads over the last six months.}
+    \resumeItem{Contributed to the \textbf{Next.js} travel web platform \textbf{\href{https://ioka.uz}{ioka.uz}} and its \textbf{Payload CMS}, building domain applications and shared navigation while enabling teams to manage SEO pages, banners, legal documents, and travel content; improved \textbf{\href{https://ioka.kz}{ioka.kz}} with SSR, localized routing, hreflang, sitemap, robots.txt, Open Graph, and security headers, achieving Lighthouse scores of 100 SEO and 98 Performance, with LCP 0.5s and CLS 0.012.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Global ID}{June 2023 -- May 2024}{Frontend Engineer}{Almaty, Kazakhstan}
+  \resumeItemListStart
+    \resumeItem{Worked in a 10-person product team across a marketplace MVP and \textbf{Ocean Business}, a task-based platform used by a few thousand users to complete paid online work.}
+    \resumeItem{Led the migration of two production applications to \textbf{Vue 3} and \textbf{Composition API}, establishing reusable frontend architecture and reducing legacy complexity across the codebase.}
+    \resumeItem{Created and maintained a shared \textbf{UI kit} and shipped product interfaces including pages, forms, data tables, authentication flows, and responsive layouts for core user journeys.}
+    \resumeItem{Reworked state and server-driven data flows with \textbf{Pinia}; resolved excessive re-renders, large-dataset bottlenecks, and asynchronous race conditions to improve responsiveness and delivery speed.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Zakup}{June 2022 -- October 2022}{Frontend Engineer}{Taiwan, Remote}
+  \resumeItemListStart
+    \resumeItem{Developed a \textbf{React Native + Expo} MVP for restaurants, translating early product requirements into a usable mobile experience while collaborating with an international team of software engineers with \textbf{Google} backgrounds.}
+    \resumeItem{Owned the catalog and menu domain from requirements to shipped functionality, implementing item browsing, selection flows, navigation, and asynchronous updates across core restaurant workflows.}
+    \resumeItem{Applied \textbf{SOLID}, \textbf{DRY}, and \textbf{KISS} principles together with reusable frontend patterns for state management, navigation, and asynchronous workflows, resolving edge cases while reducing duplication and keeping MVP behavior consistent.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{International Information Technologies University}{May 2024}{Bachelor's degree in Software Engineering}{Almaty, Kazakhstan}
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+    \textbf{Frontend:} JavaScript, TypeScript, React, Next.js, Vue 3, Nuxt 3, React Native, Expo, Redux Toolkit, React Query, Pinia, Tailwind, CSS Modules, MUI \\
+    \textbf{Backend / Data:} Node.js, REST, GraphQL, PostgreSQL, Redis, server-driven applications, API integration \\
+    \textbf{Infrastructure:} Docker, Kubernetes, CI/CD, Nginx, SSR, SEO, web performance, secure payments \\
+    \textbf{Languages:} English C1 (IELTS 7.0), Russian, Kazakh
+  }}
+\end{itemize}
+\vspace{-13pt}
+
+\end{document}
