@@ -28,7 +28,33 @@ const queue = [
   },
 ];
 
-export default function LabPage() {
+type Experiment = {
+  id: string;
+  title: string;
+  status: string;
+};
+
+async function getExperiments(
+  backendUrl: string,
+): Promise<Experiment[] | null> {
+  try {
+    const response = await fetch(`${backendUrl}/experiments`, {
+      cache: "no-store",
+    });
+
+    if (!response.ok) return null;
+
+    const experiments: Experiment[] = await response.json();
+    return experiments;
+  } catch {
+    return null;
+  }
+}
+
+export default async function LabPage() {
+  const backendUrl = process.env.BACKEND_URL;
+  const experiments = backendUrl ? await getExperiments(backendUrl) : null;
+
   return (
     <div className="grid gap-8 py-12 sm:gap-10 sm:py-16">
       <PageIntro
@@ -87,6 +113,36 @@ export default function LabPage() {
           </CardContent>
         </Card>
       </div>
+      {backendUrl && (
+        <Card>
+          <CardHeader>
+            <h2 className="text-lg font-semibold">Experiments from the API</h2>
+          </CardHeader>
+          <CardContent>
+            {experiments === null ? (
+              <p className="text-sm text-muted-foreground">
+                The experiments API is unavailable.
+              </p>
+            ) : experiments.length === 0 ? (
+              <p className="text-sm text-muted-foreground">
+                No experiments yet.
+              </p>
+            ) : (
+              <ul className="divide-y">
+                {experiments.map(({ id, title, status }) => (
+                  <li
+                    key={id}
+                    className="flex items-center justify-between gap-3 py-3"
+                  >
+                    <span>{title}</span>
+                    <Badge variant="outline">{status}</Badge>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </CardContent>
+        </Card>
+      )}
       <Card>
         <CardHeader>
           <h2 className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
