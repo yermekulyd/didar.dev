@@ -183,4 +183,4 @@ export function getPost(slug: string) {
   return getPosts().find((post) => post.slug === slug);
 }
 
-export const siteUrl = "https://didar.dev";
+export const siteUrl = "https://www.didarabish.dev";

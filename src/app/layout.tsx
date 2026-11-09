@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { siteUrl } from "@/lib/content";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://didar.dev"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "didar.dev — Personal Engineering Platform",
     template: "%s — didar.dev",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Projects, notes and experiments from the path between interface and infrastructure.",
     type: "website",
-    url: "https://didar.dev",
+    url: siteUrl,
     siteName: "didar.dev",
   },
   twitter: {
