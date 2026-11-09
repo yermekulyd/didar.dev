@@ -27,7 +27,7 @@ export function GET() {
   const feed = `<?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
       <channel>
-        <title>didar.dev — Writing</title>
+        <title>Didar Abish — Writing</title>
         <link>${siteUrl}/blog</link>
         <description>Notes on software engineering, architecture and learning in public.</description>
         ${items}

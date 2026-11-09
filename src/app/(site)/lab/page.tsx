@@ -67,7 +67,7 @@ export default async function LabPage() {
           <CardHeader>
             <Badge className="text-status">Current focus</Badge>
             <h2 className="max-w-sm text-2xl font-semibold tracking-tight text-balance">
-              Building the smallest useful version of didar.dev.
+              Building the smallest useful version of didarabish.dev.
             </h2>
             <p className="max-w-md text-sm/6 text-muted-foreground">
               The first milestone is a clear public site. The next one is a real

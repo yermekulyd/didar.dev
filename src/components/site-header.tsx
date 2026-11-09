@@ -49,7 +49,7 @@ export function SiteHeader() {
             <span className="grid size-8 place-items-center rounded-md bg-primary text-primary-foreground">
               <Terminal className="size-4" aria-hidden="true" />
             </span>
-            didar.dev
+            Didar Abish
           </Link>
 
           <nav

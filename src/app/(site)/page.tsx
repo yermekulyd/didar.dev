@@ -88,7 +88,7 @@ export default function HomePage() {
           <CardHeader className="flex items-center justify-between gap-3 border-b bg-muted px-4 py-3.5 sm:px-5">
             <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
               <Terminal className="size-4" aria-hidden="true" />
-              <span>~/didar.dev</span>
+              <span>~/didarabish.dev</span>
             </div>
             <Badge className="text-status">
               <span

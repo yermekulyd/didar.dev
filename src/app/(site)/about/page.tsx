@@ -7,7 +7,7 @@ import { Card } from "@/shared/ui/card";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Didar and the thinking behind didar.dev.",
+  description: "About Didar and the thinking behind didarabish.dev.",
 };
 
 export default function AboutPage() {
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 <a href="https://github.com" target="_blank" rel="noreferrer">
                   GitHub ↗
                 </a>
-                <a href="mailto:hello@didar.dev">Email ↗</a>
+                <a href="mailto:yermekulyd@gmail.com">Email ↗</a>
               </dd>
             </div>
           </dl>

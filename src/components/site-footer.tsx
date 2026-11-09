@@ -9,7 +9,7 @@ export function SiteFooter() {
           <a href="https://github.com" target="_blank" rel="noreferrer">
             GitHub ↗
           </a>
-          <a href="mailto:hello@didar.dev">Email ↗</a>
+          <a href="mailto:yermekulyd@gmail.com">Email ↗</a>
           <Link href="/blog">Writing ↗</Link>
         </div>
       </div>
